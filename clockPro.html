@@ -1,0 +1,38 @@
+<html>
+	<title>clock</title>
+
+	<head>
+			<style type = "text/css">
+				#kechu
+				{
+					background-color:pink;
+				}
+				
+			
+			</style>
+	
+	</head>
+	
+	<body>
+		<canvas id = "kechu" width = "300px" height = "300px"></canvas>
+		
+		<script type = "text/javascript">
+			var x = document.getElementById("kechu");
+			var y = x.getContext("2d");
+		    var	radius = x.height/2;
+			y.translate(radius,radius);
+			radius = .9 * radius;
+			drawCircle();
+			
+			
+		function drawCircle()
+		{
+			y.arc(0,0,radius,0,2 *Math.PI);
+			y.fillStyle = "white";
+			y.fill();
+		}
+			
+		</script>
+		
+	</body>
+</html>

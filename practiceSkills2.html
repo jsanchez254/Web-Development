@@ -1,0 +1,171 @@
+<html>
+	<title> PracticeSkills2 </title>
+	
+	<head>
+		<style type = "text/css">
+			.header
+			{
+				max-width: 800px;
+				margin: auto;
+				border: 6px silver double;
+				position: relative;
+				background-color: #4eacca;
+			}
+			
+			body
+			{
+				background-image: url("grey2.jpg");
+				background-repeat: repeat-x;
+			}
+		
+			.textone
+			{
+				text-align: center;
+				
+				color:lightblue;
+				padding: 9px 0px 9px 0px;
+				width: 100%;
+				background-color: white;
+				border: #73AD21 solid;
+				
+				
+			}
+			
+			.blocks
+			{
+				text-align: center;
+				display: inline-block;
+				width: 150px;
+				height: 30px;
+				margin: 10px;
+				border: 3px solid #73AD21;  
+				position: static;
+				padding: 9px;
+				background-color: white;
+				
+				
+			}
+			
+			.blocks:hover
+			{
+				background-color: #73AD21;
+				color: white;
+				
+			}
+			
+			.clickone
+			{
+				top :5px;
+				padding: 5px;
+				text-align: center;
+				background: silver;
+				max-width: 700px;
+				margin: auto;
+				border-style: inset;
+				position :relative;
+				display: block;
+			}
+			
+			h1
+			{
+				text-align: center;
+				
+			}	
+			
+			.button
+			{
+				
+				cursor: pointer;
+				outline:none;
+				font-size: 12px;
+				background-color: lightblue;
+				width: 60px;
+				height:40px;
+				border-radius: 30%;
+				box-shadow: 0 9px grey;
+				border:none;
+			}
+			
+			.button:hover
+			{
+				background-color: #83a4fe;
+			}
+			
+			.button:active
+			{
+				background-color: #83a4fe;
+				box-shadow: 0 5px #666;
+				transform:translateY(7px);
+				
+
+			}
+	
+		</style>
+	
+	</head>
+	
+	<body>
+		<div class = "header">
+			<div>
+				<h1 class = "textone">This will turn into a very cool website</h1>
+				
+					<div class = "blocks"> HOME</div>
+					<div class = "blocks"> INFORMATION</div>
+					<div class = "blocks"> CONTACT US</div>
+					<div class = "blocks"> ABOUT US </div>
+				
+				</div>
+				<img src = "nature31.jpg" style = "width: 100%; height: 400px;">
+			</div>
+		</div>
+		
+			
+		<div class = "clickone">
+			<br>
+			<h1>ENTER YOUR AGE:</h1>
+			<br>
+			<form class = "kechuValue">
+				Enter a number <input id = "kechu"> <button class = "button" type = "button" onclick = "decideF()"> SUBMIT </button>
+			</form>
+			
+		</div>
+		
+		<h1 id = "demo" class = "textone"> something will appear here </h1>
+		
+		<script type = "text/javascript">
+			function decideF()
+			{
+				var x;
+				x = document.getElementById("kechu").value;
+				
+				if (x > 0 && x <=5)
+				{
+					document.getElementById("demo").innerHTML = "You are young, you probably can't read this :0!!";
+				}
+				
+				if(x >= 6 && x <15)
+				{
+					document.getElementById("demo").innerHTML = "You can READ yaay" ;
+				}
+				
+				if(x >= 16 && x <25)
+				{
+					document.getElementById("demo").innerHTML = "You are an adult or almost an adult CONGRATS!" ;
+				}
+				
+				if(x >= 26)
+				{
+					document.getElementById("demo").innerHTML = "YOU ARE OOOOLLDDDDDD" ;
+				}
+				
+				if(x >= 90)
+				{
+					document.getElementById("demo").innerHTML = "YOU ARE DEAD, MOST LIKELY" ;
+				}
+			}
+		
+		</script>
+		
+		
+	</body>
+</html>

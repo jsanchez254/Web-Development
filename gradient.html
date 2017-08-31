@@ -1,0 +1,27 @@
+<html>
+
+	<title>Gradient</title>
+	
+	<body>
+		<h1>Gradient</h1>
+		
+		<canvas id = "kechu" height = "300px" width = "300px" style = "border: 5px lightblue double"></canvas>
+		
+		<script type = "text/javascript">
+			//Linear gradient
+			var x = document.getElementById("kechu");
+			var y = x.getContext("2d");
+			
+			//gradient
+			var grd = y.createLinearGradient(70,70, 0,50);
+			grd.addColorStop(0,"blue");
+			grd.addColorStop(.6,"white");
+			grd.addColorStop(.8,"green");
+			grd.addColorStop(1,"pink");
+			
+			
+			y.fillStyle = grd;
+			y.fillRect(10,10, 200, 100);
+		</script>
+	</body>
+</html>

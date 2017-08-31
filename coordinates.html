@@ -1,0 +1,42 @@
+<html>
+	<title>Coordinates</title> 
+
+	<head>
+		<style type = "text/css">
+			canvas
+			{
+				border: 5px inset pink;
+				background-color:lightblue;
+			}
+			
+			h1
+			{
+				font-family:Arial;
+			}
+			
+		</style>
+	</head>
+		<h1>My First Coordinates</h1>
+	<body>
+		<canvas id = "kechu" width = "200px" height = "200px"></canvas>
+		
+		<canvas id = "circle" width = "200px" height = "200px"> </canvas>
+		
+		<script type = "text/javascript">
+			var x = document.getElementById("kechu");
+			var y = x.getContext("2d");
+			y.moveTo(0,0);
+			y.lineTo(190, 200);
+			y.stroke();
+			
+			//second canvas
+			var z = document.getElementById("circle");
+			var c = z.getContext("2d");
+			c.beginPath();
+			c.arc(100,100,100,0,2 * Math.PI);
+			c.stroke();
+			
+		</script>
+		
+	</body>
+</html>

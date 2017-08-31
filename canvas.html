@@ -1,0 +1,31 @@
+<html>
+	<title> canvas </title>
+
+	<head>
+		<style type = "text/css">
+			h1
+			{
+				text-weight: bold;
+				color:lightblue;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<h1> BOX FILLING </h1>
+		<canvas id = "kechu" width = "200" height = "300" style = "border: solid blue 5px"></canvas>
+		
+		<script type = "text/javascript">
+			var x = document.getElementById("kechu");
+			var y = x.getContext("2d");
+			y.fillStyle = "blue";
+			y.fillRect(1,9,150,75);
+
+		
+			
+		
+		</script>
+	</body>
+
+</html>

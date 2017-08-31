@@ -1,0 +1,53 @@
+<html>
+	<title>clockPro2</title>
+
+	<head>
+		<style type = "text/css">
+			#kechu
+			{
+				background-color:pink;
+	
+			}
+		</style>
+	
+	</head>
+
+	<body>
+		<canvas id = "kechu" height = "300px" width = "300px"></canvas>
+	
+		<script type = "text/javascript">
+			var x = document.getElementById("kechu");
+			var ctx = x.getContext("2d");
+			var radius = x.height/2;
+			ctx.translate(radius, radius);
+			radius = radius * .9;
+			drawCircle();
+			
+			function drawCircle()
+			{
+				/*y.beginPath();
+				y.fillStyle = "white";
+				y.arc(0,0, radius, 0 , 2 * Math.PI);
+				y.fill();*/
+				
+				
+				  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+			}
+		</script>
+	</body>
+</html>
