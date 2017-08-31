@@ -1,0 +1,55 @@
+<html>
+	<head>
+			<script type = "text/javascript">
+			//UNIING TWO ARRAYS
+			var kechu = new Array("poke", "hello", "iiijaaaa");
+			var kechitin = new Array( "mon", "hey", "lololo");
+			
+			
+			var kechus = kechu.concat(kechitin);
+			var num = kechus.length;
+			
+			//POP AND JOIN
+			var crap = new Array("nails" ,"hair", "poop", "caca");
+			crap.pop();
+			//crap.sort();
+			crap.reverse();
+			crap.push("cacamex");
+			var link = crap.join();
+			
+			//USER ENTERING STUFF
+			var poke = prompt("enter your name: ");
+			var cacush = new Array (8);
+			
+			//ASSOCIATIVE ARRAYS
+			var kechipu = new Array();
+			kechipu ["videogame"] = "The Lengend of Zelda";
+			kechipu ["food"] = "quesadilla";
+			
+			document.write("kechu loves to eat " + kechipu["food"] + ".His favorite game is " + kechipu["videogame"] + "<br>");
+			
+			for(i =0;i< cacush.length;i++)
+			{
+				cacush[i] = prompt("enter stuff to array: ");
+			}
+			var string = cacush.join();
+			
+			</script>
+	</head>
+	
+	<body>
+			<script type = "text/javascript">
+			
+				//PRINT STUFF
+				document.write(kechus[5] + "<br>");
+				document.write(num + "<br>");
+				document.write(link + "<br>");
+				document.write(poke + "<br>");
+				document.write(string);
+
+			</script>
+			
+			
+	</body>
+	
+</html>

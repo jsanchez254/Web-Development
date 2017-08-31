@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type = "text/javascript">
+			function bloopi(name, age)
+			{
+				this.name = name;
+				this.age = age;
+				this.die = death;
+			}
+		
+			function death()
+			{
+				var dead = 80 - this.age;
+				return dead;
+			}
+			
+			var kechu = new bloopi ("kechu" , 19);
+			
+			//ARRAY
+			var kechuArray = new Array("Hello ese", "jijijijij", "jojojojojj", "jejejejej");
+			
+			var stuff = new Array (9);
+			
+		</script>
+	</head>
+	
+	<body>
+		<script type = "text/javascript">
+			document.write(kechu.die() + "<br>");
+			document.write(kechuArray[2] + "<br>");
+			
+			for(i = 0; i<9; i++)
+			{
+				stuff[i]="Hello ese";
+			}
+			var x = 0;
+			while(x<9)
+			{
+				document.write(stuff[x] + "<br>");
+				x++;
+			}
+		</script>
+	</body>
+
+</html>
