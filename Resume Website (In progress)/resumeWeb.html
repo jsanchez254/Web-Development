@@ -1,0 +1,467 @@
+<html>
+	<title> Jesus Sanchez</title>
+	<head>
+		<style type = "text/css">
+		
+			/*--------------SLIDE SHOW-------------------*/
+			.next, .prev
+			{
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 14px;
+				margin-top: -22px;
+				color: black;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+				background-color:white;
+			}
+			
+			.next
+			{
+				right: 245px;
+				border-radius: 3px 0 0 3px;
+			}
+			
+			.prev:hover, .next:hover
+			{
+				background-color: silver;
+			}
+			.text
+			{
+				text-align: center;
+				color: white;
+				bottom :8px;
+				padding: 8px 12px;
+				font-size: 20px;
+				position: absolute;
+				width: 100%;
+				
+			}
+			
+			
+			/*.slideShow_container
+			{
+			
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+			}*/
+			
+			.number
+			{
+				color: white;
+				font-size: 15px;
+				padding: 9px 12px;
+				position: absolute;
+				top: 0;
+			}
+			
+			.dot
+			{
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: grey;
+				margin: 0 3px;
+				cursor: pointer;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+				
+			}
+			
+			.active, dot:hover
+			{
+				background-color: green;
+			}
+			
+			.fade
+			{
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+
+			@-webkit-keyframes fade 
+			{
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+
+			@keyframes fade 
+			{
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+
+/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) 
+			{
+				.prev, .next,.text {font-size: 11px}
+			}
+			
+			/*--------------SLIDE SHOW-------------------*/
+			
+		
+		
+		
+			body
+			{
+				background-image: url("grey2.jpg");
+				background-repeat: repeat-x;
+			}
+			
+			.foto
+			{
+				border: pink solid 2px;
+			}
+			.container
+			{
+				
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+				border: solid white 5px;
+				
+				
+			}
+			
+			.intro
+			{
+				background-color: white;
+				height: 50px;
+				top:0px;
+			
+				padding-bottom:30px;
+				
+			}
+			
+			.intro h1
+			{
+				color: black;
+				text-align: center;
+				font-size: 60px;
+				
+			}
+			
+			.picture
+			{
+				top: 50px;
+				left: 50px;
+				position: absolute;
+			}
+			
+			.content
+			{
+				text-indent: 10px;
+				left: 5px;
+				right: 5px;
+			}
+			
+			li
+			{
+				list-style-type: square;
+				font-size: 22px;
+			}
+			
+			.blocks
+			{
+				display: inline-block;
+				position: static;
+				width: 480px;
+				
+			}
+			
+			.texto
+			{
+				font-size: 22px;
+			}
+			
+			.block 
+			{
+				display: inline-block;
+				position: static;
+				width:155px;
+				height: 50px;
+				border: solid #73AD21 3px;
+				background-color: white;
+			
+			}
+			
+			.blockM
+			{
+				padding-left: 250px;
+			}
+			
+			.block h3
+			{
+				text-align: center;
+				padding-top: 0px;
+				
+			}
+			
+			.block:hover
+			{
+				background-color: #73AD21;
+				color:white;
+			}
+			
+			.slideShow
+			{
+				background-color: white;
+				padding-left: 245px;
+			}
+			
+			.head
+			{
+				position: relative;
+				max-width: 1500px;
+				background-color: white;
+				margin: auto;
+				border: black solid 5px;
+				height:1050px;
+			}
+			
+			body
+			{
+				background-image: url("blue.jpg");
+				background-repeat: repeat;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<!-- CHIHUAHUA PIC
+		<div class = "picture" >
+				<img src = "dog.jpg"  style = "height:350px; width : 350px; border-radius: 360px; border: gold solid 5px; right:0px;">
+		</div>
+		-->
+		
+		<div class = "head">
+			<div class = "intro">
+				<h1> <a id = "A"></a> Jesus Sanchez</h1>
+			</div>
+			
+			</br>
+			<!-- BLOCKS -->
+		<div  class = "blockM">
+			
+			<a href = "#A"><div class = "block">
+				<h3>HOME</h3>
+			</div></a>
+				
+			<a href = "#B"><div class = "block">
+				<h3>WHO I AM</h3>
+			</div></a>
+				
+			<a href = "#C"><div class = "block">
+				<h3>SKILLS</h3>
+			</div></a>
+				
+			<a href = "#D"><div class = "block">
+				<h3>INTERESTS</h3>
+			</div></a>
+				
+			<a href = "#E"><div class = "block">
+				<h3>EXPERIENCE</h3>
+			</div></a>
+				
+				
+			<a href = "#F"><div class = "block">
+				<h3>CONTACT INFO</h3>
+			</div></a>
+		</div>
+			</br>
+			<!-- SLIDE SHOW -->
+			
+		
+			
+			<div class = "slideShow">
+			
+					<div class = "image fade">
+						<div class = "number"> 1/3 </div>
+						<img src = "jesus.jpg" style ="width:1000px; height: 700px; border: silver groove 5px;">
+					<div class = "text">Kechuland</div>
+				</div>
+			
+			
+				<div class = "image fade">
+						<div class = "number"> 2/3 </div>
+						<img src = "day.jpg" style ="width:1000px; height: 700px; border: silver groove 5px; ">
+						<div class = "text">Kechuland2</div>
+				</div>
+			
+			
+				<div class = "image fade">
+					<div class = "number"> 3/3 </div>
+					<img src = "night.jpg" style ="width:1000px; height: 700px;  border: silver groove 5px;">
+					<div class = "text">Kechuland3</div>
+				</div>
+			
+				<a class = "prev" onclick = "plusSlides(-1)"> &#10094;</a>
+				<a class = "next" onclick = "plusSlides(1)"> &#10095;</a>
+			
+			</div>
+			<br>
+		
+			<div style= "text-align:center">
+				<span class = "dot" onclick = "currentSlide(1)"></span>
+				<span class = "dot" onclick = "currentSlide(2)"></span>
+				<span class = "dot" onclick = "currentSlide(3)"></span>
+				
+			</div>
+			
+		</div>
+		
+	
+		<div class = "container">
+			<!-- <div class = "foto">
+				<img src = "jesus.jpg" style = "width: 100%; height: 700px">
+			</div> -->
+			
+			<!-- SLIDE SHOW -->
+			<div class = "content">
+				<h2><a id = "B"></a> little bit about myself: </h2>
+				</br>
+				</br>
+				</br>
+				<p class = "texto">
+					 I am a very responsible and motivated individual.I'm very friendly and
+					 am always willing to giveback to those who've helped me in the past. 
+					 One of my main goals as a college student is to graduate while learning about people. 
+					 I like working with others whether it's homework or something unrelated to school. I'm very 
+					 curious about different fields, not just my own (CSE). For example, I like 
+					 reading philosophy on my free time. I'm also always willing to learn different
+					 things, I like to challenge myself with hard tasks. I learn from mistakes.
+				</p>
+				
+				</br>
+				
+				<!-- INTERESTS -->
+				<h2><a id = "D" ></a> Interests: </h2>
+				<ul>
+					<li>I like playing videogames</li>
+					<li>I like reading</li>
+					<li>I love hiking</li>
+					<li>I enjoy philosophy</li>
+					<li>I enjoy drawing</li>
+					<li>I love learning anything realted to computer science</li>
+					<li>My favorite music genre is alternitavice rock</li>
+					<li>My Favorite band is Coldplay</li>
+				</ul>
+					
+				
+				</br>
+				<!-- SKILLS -->
+				<h2> <a id = "C" ></a>Skills: </h2>
+				
+				<div class = "skills">
+					<div class = "blocks">
+						<ul>
+							<li>
+								HTML, CSS and JavaScript
+							</li>
+							<li>
+								PHP
+							</li>
+							<li>
+								C/C++ (Data structures and algorithms)
+							</li>
+						</ul>
+					</div>
+					<div class = "blocks">
+							<ul>
+							<li>
+								Billiterate and Bilingual in Spanish and English
+							</li>
+							<li>
+								Linux
+							</li>
+							<li>
+								Java
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+			</br>
+			
+			<!-- EXPERIENCE -->
+			<h2> <a id = "E"></a> Experience </a>
+			<div class = "experience">
+				<p> Work Experience: </p>
+				<p>Computer Science tutor:</p>
+				
+				
+				<ul>
+					<li>Tutor students for Java,C/C++(data structures and algorithms)</li>
+					<li>Be a role model for students by guiding them towards success at school.</li>
+					<li>Encourage students to be involved at school to make the best out of their learning</li>
+
+				</ul>
+			</div>
+			<!-- CONTACT INFO-->
+			<div style = "width: 100%; height: 200px; background-color: white; ">
+			<hr>
+				<a id = "F"></a>
+				<p class = "texto" style = "text-align: center"> Address: 1436 Antioch Ct. , Merced, CA, 95348 </p>
+				<p class = "texto" style ="text-align: center"> Phone Number: (209)-261-4486</p>
+			</div>
+			
+			
+		</div>
+		
+			<!-- JAVASCRIPT -->
+			
+			<script type = "text/javascript">
+			
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) 
+			{
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) 
+			{
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) 
+			{
+				var i;
+				var slides = document.getElementsByClassName("image");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length)
+				{
+					slideIndex = 1
+				}    
+				if (n < 1)
+				{
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) 
+					{
+						slides[i].style.display = "none";  
+					}
+				for (i = 0; i < dots.length; i++) 
+				{
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
